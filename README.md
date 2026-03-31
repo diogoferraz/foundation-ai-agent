@@ -52,18 +52,7 @@ A powerful, document-aware chat agent built with Node.js, TypeScript, and LangCh
   ```
   The server will start at `http://localhost:3000`.
 
-## 4. Next Steps
-
-### Deployment & DevOps
-- [ ] **Dockerization**: Create a `Dockerfile` and `docker-compose.yml` to bundle the app and potentially a local ChromaDB/Postgres instance.
-- [ ] **Cloud Deployment**: Deploy the Express API to platforms like Vercel, Render, or Railway.
-
-### New Features
-- [ ] **User Memory**: Implement persistent chat history using Supabase to give the agent "long-term memory".
-- [ ] **Agentic Tools**: Add more tools like Google Search, Slack integration, or Database CRUD tools.
-- [ ] **Multi-Model Support**: Allow switching between OpenAI, Anthropic, and Local Ollama models via configuration.
-
-## 5. Testing Plan
+## 4. Testing Plan
 
 ### Unit Tests
 - **Tool**: [Vitest](https://vitest.dev/) or [Jest](https://jestjs.io/).
@@ -74,7 +63,7 @@ A powerful, document-aware chat agent built with Node.js, TypeScript, and LangCh
 - **Scope**: Test the Express routes and the full flow from document ingestion to vector search.
 - **Database**: Use a separate test schema in Supabase or a local Docker-based Postgres for testing.
 
-## 6. Handoff
+## 5. Handoff
 
 ### Project Structure
 - `src/index.ts`: Entry point for the Express server.
@@ -86,7 +75,7 @@ A powerful, document-aware chat agent built with Node.js, TypeScript, and LangCh
 - The system uses a **Recursive Character Splitting** strategy for ingestion.
 - **Supabase RPC** is the bridge between the TypeScript code and the vector search logic in the database.
 
-## 7. Change Log
+## 6. Change Log
 
 - **v1.0.0 (Initial Implementation)**
   - Document ingestion from local directories.
@@ -95,7 +84,7 @@ A powerful, document-aware chat agent built with Node.js, TypeScript, and LangCh
   - Vector Store implementation using Supabase and `pgvector`.
   - Basic LangChain agent with custom tools.
 
-## 8. API Examples
+## 7. API Examples
 
 You can interact with the agent's ingestion API using `curl`.
 
